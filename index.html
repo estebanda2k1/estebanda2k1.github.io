@@ -1,52 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Esteban Gómez - Software Engineer</title>
     <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <main>
-        <header>
-            <h1>Esteban Gómez</h1>
-            <h1>Software Engineer</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#InformacionPersonal">Informacion Personal</a></li>
-                <li><a href="portafolio.html">Mi Portafolio</a></li>
-                <li><a href="experiencia.html">Mi experiencia</a></li>
-                <li><a href="#Contactos">Contacto</a></li>
+    <nav class="barra-navegacion">
+        <div class="contenedor-navegacion">
+            <div class="logo">EG</div>
+            <ul class="menu-navegacion">
+                <li><a href="#sobre-mi" class="enlace-navegacion">Sobre Mí</a></li>
+                <li><a href="#habilidades" class="enlace-navegacion">Habilidades</a></li>
+                <li><a href="portafolio.html" class="enlace-navegacion">Portafolio</a></li>
+                <li><a href="experiencia.html" class="enlace-navegacion">Experiencia</a></li>
+                <li><a href="#contacto" class="enlace-navegacion">Contacto</a></li>
             </ul>
-        </nav>
-        
-        <section id="Informacion personal">
-            <h2>Informacion Personal</h2>
-            <p>Aqui va el parrafo acerca de mi</p>
-            <img src="" alt="Foto Esteban">
-            <p>Tecnologías que manejo:</p>
-            <ul>
-                <img src="" alt="imagen de Java">
-                <li>Java</li>
-                <img src="" alt="imagen de html5">
-                <li>HTML5</li>
-                <img src="" alt="imagen de css3">
-                <li>CSS3</li>
-                <img src="" alt="imagen de JavaScript">
-                <li>JavaScript</li>
-                <img src="" alt="imagen de Python">
-                <li>Python</li>
-            </ul>
-        </section>
-        <section id="Contactos">
-            <h1>Contactame</h1>
-            <ul>
-                <li><a href="https://wa.me/593983352607?text=Hola%20Esteban%2C%20te%20escribo%20desde%20tu%20portafolio">Whatsapp</a></li>
-                <li><a href="www.linkedin.com/in/esteban-gómez-526a3b25a">LinkedIn</a></li>
-                <li></li>
-            </ul>
-        </section>
-    </main>
+        </div>
+    </nav>
+
+    <section class="seccion-presentacion">
+        <div class="contenido-presentacion">
+            <div class="texto-presentacion">
+                <p class="saludo">Hola, soy</p>
+                <h1 class="nombre">Esteban Gómez</h1>
+                <h2 class="titulo">Software Engineer</h2>
+                <p class="descripcion">Desarrollador apasionado por crear soluciones tecnológicas eficientes</p>
+                <div class="botones-presentacion">
+                    <a href="#contacto" class="boton boton-primario">Contáctame</a>
+                    <a href="portafolio.html" class="boton boton-secundario">Mis Proyectos</a>
+                </div>
+            </div>
+            <div class="imagen-presentacion">
+                <div class="tarjeta-perfil">
+                    <div class="contenedor-imagen-perfil">
+                        <img src="src/img/profile.jpg" alt="Esteban Gómez" class="imagen-perfil">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indicador-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="seccion-sobre-mi">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Sobre Mí</h2>
+            <div class="contenido-sobre-mi">
+                <div class="texto-sobre-mi">
+                    <p>
+                        Soy un ingeniero de software dedicado con experiencia en desarrollo de aplicaciones web y apasionado del análisis de datos. 
+                        Me apasiona aprender nuevas tecnologías.
+                    </p>
+                    <p>
+                        Mi enfoque se centra en escribir código limpio, mantenible y escalable, siempre buscando 
+                        las mejores prácticas y soluciones innovadoras.
+                    </p>
+                    <div class="estadisticas-sobre-mi">
+                        <div class="item-estadistica">
+                            <h3>2+</h3>
+                            <p>Años de Experiencia</p>
+                        </div>
+                        <div class="item-estadistica">
+                            <h3>10+</h3>
+                            <p>Proyectos Completados</p>
+                        </div>
+                        <div class="item-estadistica">
+                            <h3>5+</h3>
+                            <p>Tecnologías Dominadas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="habilidades" class="seccion-habilidades">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Habilidades Técnicas</h2>
+            <div class="cuadricula-habilidades">
+                <div class="tarjeta-habilidad">
+                    <div class="icono-habilidad">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+
+                </div>
+                <div class="tarjeta-habilidad">
+                    <div class="icono-habilidad">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+
+                </div>
+                <div class="tarjeta-habilidad">
+                    <div class="icono-habilidad">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    
+                </div>
+                <div class="tarjeta-habilidad">
+                    <div class="icono-habilidad">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="tarjeta-habilidad">
+                    <div class="icono-habilidad">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                </div>
+                <div class="tarjeta-habilidad">
+                    <div class="icono-habilidad">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Bases de Datos</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="seccion-contacto">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Contáctame</h2>
+            <p class="subtitulo-contacto">¿Tienes un proyecto en mente? Hablemos</p>
+            <div class="metodos-contacto">
+                <a href="https://wa.me/593983352607?text=Hola%20Esteban%2C%20te%20escribo%20desde%20tu%20portafolio" 
+                   class="tarjeta-contacto" target="_blank">
+                    <div class="icono-contacto">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Envíame un mensaje</p>
+                </a>
+                <a href="https://www.linkedin.com/in/esteban-gómez-526a3b25a" 
+                   class="tarjeta-contacto" target="_blank">
+                    <div class="icono-contacto">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Conectemos profesionalmente</p>
+                </a>
+                <a href="mailto:esteb_n79@hotmail.com" class="tarjeta-contacto">
+                    <div class="icono-contacto">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Escríbeme un correo</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>&copy; 2025 Esteban Gómez. Todos los derechos reservados.</p>
+            <div class="enlaces-sociales">
+                <a href="https://github.com/estebanda2k1" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/esteban-gómez-526a3b25a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/593983352607" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/script.js"></script>
 </body>
 </html>
